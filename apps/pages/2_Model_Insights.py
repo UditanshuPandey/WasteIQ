@@ -8,7 +8,7 @@ from PIL import Image
 st.set_page_config(page_title="Insights · WasteIQ", page_icon="📊", layout="wide")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ASSETS_DIR = os.path.join(BASE_DIR, "assets"
+ASSETS_DIR = os.path.join(BASE_DIR, "assets")
                           
 # ─── STYLES ──────────────────────────────────────────────────────
 st.markdown("""
