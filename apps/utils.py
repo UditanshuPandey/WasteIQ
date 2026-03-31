@@ -6,11 +6,13 @@ import json
 import torch
 import numpy as np
 import cv2
+import os
 
 # ─── CONFIG ──────────────────────────────────────────────────────
-MODEL_PATH = "models/waste_model.pth"
-CLASS_PATH = "models/classes.json"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+MODEL_PATH = os.path.join(BASE_DIR, "models", "waste_model.pth")
+CLASS_PATH = os.path.join(BASE_DIR, "models", "classes.json")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ─── MODEL LOADING ───────────────────────────────────────────────
