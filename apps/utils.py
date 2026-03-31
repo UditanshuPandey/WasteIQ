@@ -8,8 +8,8 @@ import numpy as np
 import cv2
 
 # ─── CONFIG ──────────────────────────────────────────────────────
-MODEL_PATH = "../models/waste_model.pth"
-CLASS_PATH  = "../models/classes.json"
+MODEL_PATH = "models/waste_model.pth"
+CLASS_PATH = "models/classes.json"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
